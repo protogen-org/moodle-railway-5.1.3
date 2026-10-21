@@ -69,4 +69,4 @@ chmod 644 "$CONFIG"
 echo ">>> config.php permissions fixed."
 
 # Start the original entrypoint + Apache
-exec /usr/local/bin/moodle-docker-php-entrypoint apache2-foreground
+exec docker-php-entrypoint apache2-foreground
